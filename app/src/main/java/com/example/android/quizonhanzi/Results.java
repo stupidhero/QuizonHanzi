@@ -6,7 +6,7 @@ import android.widget.TextView;
 
 public class Results extends AppCompatActivity {
 
-    int numberOfQuestion= 5;
+    int numberOfQuestion = 5;
     int score = 0;
 
     @Override
@@ -19,11 +19,11 @@ public class Results extends AppCompatActivity {
         score = Integer.parseInt(savedScore);
 
         TextView result = (TextView) findViewById(R.id.scoreIs);
-        TextView resultText =(TextView) findViewById(R.id.resultIs);
+        TextView resultText = (TextView) findViewById(R.id.resultIs);
         result.setText("" + score);
-        if(score < numberOfQuestion/2 ){
+        if (score < numberOfQuestion / 2) {
             result.setTextColor(0xffff0000);
             resultText.setText(R.string.resultIsBad);
         }
-       }
+    }
 }

@@ -20,7 +20,7 @@ public class Question5 extends AppCompatActivity {
     boolean initVal = randNum.nextBoolean();
 
     @Override
-    protected void onCreate(Bundle savedInstanceState){
+    protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_question5);
 
@@ -28,10 +28,10 @@ public class Question5 extends AppCompatActivity {
         String savedScore = temp.getString("score");
         score = Integer.parseInt(savedScore);
 
-        question =  (TextView) findViewById(R.id.question);
+        question = (TextView) findViewById(R.id.question);
         answer1 = (RadioButton) findViewById(R.id.answer1);
         answer2 = (RadioButton) findViewById(R.id.answer2);
-        answer3 = (RadioButton)findViewById(R.id.answer3);
+        answer3 = (RadioButton) findViewById(R.id.answer3);
 
         if (initVal) {
             question.setText(getResources().getString(R.string.meaningOf));
@@ -48,17 +48,21 @@ public class Question5 extends AppCompatActivity {
 
     }
 
-    public void onRadioButtonClick(View view){
-        if(initVal) {
+    public void onRadioButtonClick(View view) {
+        if (initVal) {
             if (answer2.isChecked()) {
-                score+=1;
+                score += 1;
             }
-        } else { if(answer3.isChecked()){score+=1; } }
+        } else {
+            if (answer3.isChecked()) {
+                score += 1;
+            }
+        }
 
         Intent i = new Intent(this, Results.class);
 
         Bundle savedScore = new Bundle();
-        savedScore.putString("score", "" +  score);
+        savedScore.putString("score", "" + score);
         i.putExtras(savedScore);
 
         startActivity(i);
