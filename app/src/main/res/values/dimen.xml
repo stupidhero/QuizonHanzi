@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <dimen name="HanziSize">108sp</dimen>
+    <dimen name="QuestionSize">24sp</dimen>
+
+
+</resources>

@@ -1,0 +1,51 @@
+<resources>
+    <string name="app_name">Quiz on Hanzi</string>
+    <string name="startButton">开始</string>
+    <string name="resultIsGood">You\'re awesome. Your score is:</string>
+    <string name="resultIsBad">Try again. Your score is:</string>
+    <string name="quizTopic">You\'re being tested on: </string>
+    <string name="quizTopic2">汉字</string>
+    <string name="readingOf">What\'s the reading of: </string>
+    <string name="meaningOf">What\'s the meaning of: </string>
+
+    <string name="hanzi1">龙</string>
+    <string name="meaning11">dog</string>
+    <string name="meaning12">dragon</string>
+    <string name="meaning13">dachshund</string>
+    <string name="reading11">long1</string>
+    <string name="reading12">song3</string>
+    <string name="reading13">feng4</string>
+
+    <string name="hanzi2">龟</string>
+    <string name="meaning21">house</string>
+    <string name="meaning22">family</string>
+    <string name="meaning23">tortoise</string>
+    <string name="reading21">niao3</string>
+    <string name="reading22">ma1</string>
+    <string name="reading23">gui1</string>
+
+    <string name="hanzi3">囊</string>
+    <string name="meaning31">tree</string>
+    <string name="meaning32">fur</string>
+    <string name="meaning33">bag</string>
+    <string name="reading31">nang1</string>
+    <string name="reading32">nong3</string>
+    <string name="reading33">mang4</string>
+
+    <string name="hanzi4">龘</string>
+    <string name="meaning41">basilisk</string>
+    <string name="meaning42">three headed dragon</string>
+    <string name="meaning43">flying dragons</string>
+    <string name="reading41">dou3</string>
+    <string name="reading42">da2</string>
+    <string name="reading43">ta1</string>
+
+    <string name="hanzi5">爨</string>
+    <string name="meaning51">feast</string>
+    <string name="meaning52">stove</string>
+    <string name="meaning53">solstice</string>
+    <string name="reading51">chuan1</string>
+    <string name="reading52">zhuan3</string>
+    <string name="reading53">cuan4</string>
+
+</resources>
