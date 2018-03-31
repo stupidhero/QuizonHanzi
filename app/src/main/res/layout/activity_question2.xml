@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.example.android.quizonhanzi.Question2">
+    tools:context="com.example.android.quizonhanzi.Question6">
 
 
     <TextView
@@ -22,7 +22,7 @@
         android:id="@+id/hanzi"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/hanzi2"
+        android:text="@string/hanzi6"
         android:textColor="@color/BlackForHanzi"
         android:textSize="@dimen/HanziSize"
         app:layout_constraintBottom_toTopOf="parent"
@@ -31,36 +31,23 @@
         app:layout_constraintTop_toBottomOf="parent"
         app:layout_constraintVertical_bias="0.4" />
 
-    <RadioGroup xmlns:android="http://schemas.android.com/apk/res/android"
-        android:id="@+id/answerRadioGroup"
+    <EditText
+        android:id="@+id/answer"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:orientation="vertical"
-        app:layout_constraintBottom_toTopOf="@id/answerRadioGroup"
+        android:text=""
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/hanzi">
+        app:layout_constraintTop_toBottomOf="@id/hanzi" />
 
-        <RadioButton
-            android:id="@+id/answer1"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:onClick="onRadioButtonClick"
-            android:text="" />
-
-        <RadioButton
-            android:id="@+id/answer2"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:onClick="onRadioButtonClick"
-            android:text="" />
-
-        <RadioButton
-            android:id="@+id/answer3"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:onClick="onRadioButtonClick"
-            android:text="" />
-    </RadioGroup>
+    <Button
+        android:id="@+id/nextButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/nextButton"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/answer" />
 
 </android.support.constraint.ConstraintLayout>

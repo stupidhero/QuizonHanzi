@@ -13,6 +13,7 @@ public class Question4 extends AppCompatActivity {
 
 
     private TextView question;
+    private TextView hanzi;
     private RadioButton answer1;
     private RadioButton answer2;
     private RadioButton answer3;
@@ -23,16 +24,20 @@ public class Question4 extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_question4);
+        setContentView(R.layout.activity_question1);
 
         Bundle temp = getIntent().getExtras();
         String savedScore = temp.getString("score");
         score = Integer.parseInt(savedScore);
 
-        question = (TextView) findViewById(R.id.question);
-        answer1 = (RadioButton) findViewById(R.id.answer1);
-        answer2 = (RadioButton) findViewById(R.id.answer2);
-        answer3 = (RadioButton) findViewById(R.id.answer3);
+
+        hanzi = findViewById(R.id.hanzi);
+        hanzi.setText(getResources().getString(R.string.hanzi4));
+
+        question = findViewById(R.id.question);
+        answer1 = findViewById(R.id.answer1);
+        answer2 = findViewById(R.id.answer2);
+        answer3 = findViewById(R.id.answer3);
 
         if (initVal) {
             question.setText(getResources().getString(R.string.meaningOf));

@@ -3,6 +3,6 @@
 
     <dimen name="HanziSize">108sp</dimen>
     <dimen name="QuestionSize">24sp</dimen>
-
+    <dimen name="hanziQuestion">16sp</dimen>
 
 </resources>

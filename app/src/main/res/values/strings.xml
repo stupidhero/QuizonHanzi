@@ -7,6 +7,10 @@
     <string name="quizTopic2">汉字</string>
     <string name="readingOf">What\'s the reading of: </string>
     <string name="meaningOf">What\'s the meaning of: </string>
+    <string name="writePinyin">Write down the Pinyin for the following character:</string>
+    <string name="writeDownHere">Write your answer here</string>
+    <string name="nextButton">Click me for the next question!</string>
+    <string name="resultButton">Click me for results!</string>
 
     <string name="hanzi1">龙</string>
     <string name="meaning11">dog</string>
@@ -47,5 +51,15 @@
     <string name="reading51">chuan1</string>
     <string name="reading52">zhuan3</string>
     <string name="reading53">cuan4</string>
+
+    <string name="hanzi6">弑</string>
+    <string name="pinyin61">shi4</string>
+    <string name="pinyin62">shì</string>
+
+    <string name="questionRelated1">Select all body parts:</string>
+    <string name="answer71">肺</string>
+    <string name="answer72">舍</string>
+    <string name="answer73">目</string>
+
 
 </resources>
