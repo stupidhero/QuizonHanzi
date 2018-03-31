@@ -7,7 +7,6 @@
     tools:context="com.example.android.quizonhanzi.MainActivity">
 
     <TextView
-        android:id="@+id/testedOn1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/quizTopic"
@@ -23,8 +22,8 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/quizTopic2"
-        android:textSize="@dimen/HanziSize"
         android:textColor="@color/BlackForHanzi"
+        android:textSize="@dimen/HanziSize"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"

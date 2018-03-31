@@ -1,8 +1,8 @@
 package com.example.android.quizonhanzi;
 
 import android.content.Intent;
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.RadioButton;
 import android.widget.TextView;
@@ -11,12 +11,10 @@ import java.util.Random;
 
 public class Question5 extends AppCompatActivity {
 
-    private TextView question;
-    private TextView hanzi;
     private RadioButton answer1;
     private RadioButton answer2;
     private RadioButton answer3;
-    private int score = 0;
+    private int score;
     private Random randNum = new Random();
     boolean initVal = randNum.nextBoolean();
 
@@ -29,11 +27,10 @@ public class Question5 extends AppCompatActivity {
         String savedScore = temp.getString("score");
         score = Integer.parseInt(savedScore);
 
-
-        hanzi = findViewById(R.id.hanzi);
+        TextView hanzi = findViewById(R.id.hanzi);
         hanzi.setText(getResources().getString(R.string.hanzi5));
 
-        question = findViewById(R.id.question);
+        TextView question = findViewById(R.id.question);
         answer1 = findViewById(R.id.answer1);
         answer2 = findViewById(R.id.answer2);
         answer3 = findViewById(R.id.answer3);
@@ -64,12 +61,12 @@ public class Question5 extends AppCompatActivity {
             }
         }
 
-        Intent i = new Intent(this, Question6.class);
+        Intent nextQuestion = new Intent(this, Question6.class);
 
         Bundle savedScore = new Bundle();
         savedScore.putString("score", "" + score);
-        i.putExtras(savedScore);
+        nextQuestion.putExtras(savedScore);
 
-        startActivity(i);
+        startActivity(nextQuestion);
     }
 }

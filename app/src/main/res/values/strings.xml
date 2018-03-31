@@ -1,8 +1,8 @@
 <resources>
     <string name="app_name">Quiz on Hanzi</string>
     <string name="startButton">开始</string>
-    <string name="resultIsGood">You\'re awesome. Your score is:</string>
-    <string name="resultIsBad">Try again. Your score is:</string>
+    <string name="resultIsGood">You\'re awesome.</string>
+    <string name="resultIsBad">Keep working!.</string>
     <string name="quizTopic">You\'re being tested on: </string>
     <string name="quizTopic2">汉字</string>
     <string name="readingOf">What\'s the reading of: </string>
@@ -11,7 +11,7 @@
     <string name="writeDownHere">Write your answer here</string>
     <string name="nextButton">Click me for the next question!</string>
     <string name="resultButton">Click me for results!</string>
-
+    <string name="showMyResult"> Press me for your result</string>
     <string name="hanzi1">龙</string>
     <string name="meaning11">dog</string>
     <string name="meaning12">dragon</string>

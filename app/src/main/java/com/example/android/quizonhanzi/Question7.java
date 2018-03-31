@@ -8,19 +8,15 @@ import android.widget.Button;
 import android.widget.CheckBox;
 import android.widget.TextView;
 
-import java.util.Random;
-
 /**
  * Created by Jonas on 31.03.2018.
  */
 
 public class Question7 extends AppCompatActivity {
 
-    private int score = 0;
+    private int score;
     private CheckBox answer1;
-
     private CheckBox answer2;
-
     private CheckBox answer3;
 
 
@@ -43,9 +39,10 @@ public class Question7 extends AppCompatActivity {
         answer3 = findViewById(R.id.answer3);
         answer3.setText(getResources().getString(R.string.answer73));
 
-        Button nextButton = findViewById(R.id.nextButton);
 
-        final Intent i = new Intent(this, Results.class);
+        final Intent resultPage = new Intent(this, Results.class);
+
+        Button nextButton = findViewById(R.id.nextButton);
         nextButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -53,12 +50,11 @@ public class Question7 extends AppCompatActivity {
                     score += 1;
                 }
 
-
                 Bundle savedScore = new Bundle();
                 savedScore.putString("score", "" + score);
-                i.putExtras(savedScore);
+                resultPage.putExtras(savedScore);
 
-                startActivity(i);
+                startActivity(resultPage);
 
             }
         });
